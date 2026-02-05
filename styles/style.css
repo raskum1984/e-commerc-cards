@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 137px;
+}
+
+.cards {
+    max-width: 1082px;
+    margin: 72px auto 190px;
+    
+}
+
+.cards__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.cards__list-item {
+    min-width: 266px;
+    min-height: 601px;
+    background-color: #E6C434;
+}
