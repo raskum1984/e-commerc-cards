@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 74.375rem;
+  --container-padding-x: 0.9375em;
+}
+
 body {
-  width: 1920px;
+  
   margin: 0 auto;
   font-family: sans-serif;
 }
