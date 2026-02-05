@@ -1,25 +1,68 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 137px;
+  gap: 13px;
+}
+
+.header__title {
+  color: #161d25;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.header__paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  color: #5d7085;
 }
 
 .cards {
-    max-width: 1082px;
-    margin: 72px auto 190px;
-    
+  margin: 72px 0 190px;
 }
 
 .cards__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style-type: none;
 }
 
 .cards__list-item {
-    min-width: 266px;
-    min-height: 601px;
-    background-color: #E6C434;
+  width: 266px;
+  min-height: 601px;
+  border-radius: 2px;
+  padding: 31px 35px 36px;
+}
+
+.cards__list-blue {
+  background-color: #3dacfc;
+}
+
+.cards__list-yellow {
+  background-color: #e6c434;
+}
+
+.cards__list-grey {
+  background-color: #939fb3;
+}
+
+.cards__list-green {
+  background-color: #3dcad4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 157px;
 }
