@@ -131,7 +131,15 @@ color: #fff;
   margin-top: auto;
 }
 
-.card__bay:hover {
+.card__bay:hover{
   background-color: #fff;
   
+}
+
+.card__bay:hover .button__text{
+  mix-blend-mode: difference;
+}
+
+.button__textт {
+  color: #fff;
 }
