@@ -7,15 +7,21 @@
 :root {
   --container-width: 74.375rem;
   --container-padding-x: 0.9375em;
+  height: 100vh;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', serif;
   font-weight: 400;
   font-size: 16px;
   margin: 0 auto;
   color: #fff;
-  
+  min-height: 100vh;
+  padding: 72px 0 72px;
 }
 
 h1,

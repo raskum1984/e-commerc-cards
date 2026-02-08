@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 13px;
-  margin-top: 138px;
+  margin-top: 0;
 }
 
 .header__title {
@@ -21,7 +21,7 @@
 }
 
 .cards {
-  margin: 67px 0 190px;
+  margin: 67px 0 0;
 }
 
 .cards__list {
@@ -31,7 +31,6 @@
   align-items: stretch;
   gap: 6px;
   list-style-type: none;
-  
 }
 
 .cards__list-item {
@@ -41,27 +40,30 @@
   border-radius: 2px;
   padding: 31px 35px 36px;
   isolation: isolate;
-  
 }
 
 .cards__list-blue {
-  background: linear-gradient(#6bdfff, #3dacfc);
+  --developer-background: linear-gradient(#6bdfff, #3dacfc);
   --color-text: #3dacfc;
+  background: linear-gradient(#6bdfff, #3dacfc);
 }
 
 .cards__list-yellow {
-  background: linear-gradient(#fdc624, #e6c434);
+  --developer-background: linear-gradient(#fdc624, #e6c434);
   --color-text: #e6c434;
+  background: linear-gradient(#fdc624, #e6c434);
 }
 
 .cards__list-grey {
-  background: linear-gradient(#bfcedc, #939fb3);
+  --developer-background: linear-gradient(#bfcedc, #939fb3);
   --color-text: #939fb3;
+  background: linear-gradient(#bfcedc, #939fb3);
 }
 
 .cards__list-green {
-  background: linear-gradient(#55dce7, #3dcad4);
+  --developer-background: linear-gradient(#55dce7, #3dcad4);
   --color-text: #3dcad4;
+  background: linear-gradient(#55dce7, #3dcad4);
 }
 
 .card__list {
@@ -138,33 +140,27 @@
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  
 }
 
 .card__bay:hover::before {
   content: "";
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   background-color: #fff;
- 
- }
-
-
+}
 
 .button__text {
   position: relative;
   color: #fff;
   cursor: pointer;
- }
+}
 
- .card__bay:hover .button__text {
-   color: var(--color-text);
- }
-
-
+.card__bay:hover .button__text {
+  color: var(--color-text);
+}
 
 .developer {
   position: absolute;
@@ -180,7 +176,7 @@
   border-top-right-radius: 2px;
   font-weight: 500;
   font-size: 14px;
-  background: linear-gradient(#63d6fe, #5dd4f8);
+  background: var(--developer-background);
 }
 
 .developer::before {
