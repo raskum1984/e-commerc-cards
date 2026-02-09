@@ -42,18 +42,22 @@
 
 .cards__list-blue {
   background-color: #3dacfc;
+  isolation: isolate;
 }
 
 .cards__list-yellow {
   background-color: #e6c434;
+  isolation: isolate;
 }
 
 .cards__list-grey {
   background-color: #939fb3;
+  isolation: isolate;
 }
 
 .cards__list-green {
   background-color: #3dcad4;
+  isolation: isolate;
 }
 
 .card__list {
@@ -141,5 +145,6 @@ color: #fff;
 }
 
 .button__textт {
+  
   color: #fff;
 }
